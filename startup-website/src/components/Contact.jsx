@@ -1,12 +1,18 @@
 import { useForm } from "react-hook-form";
 import { contact } from "../data/content";
+import { FaEnvelope, FaPhone, FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa";
 
 export default function Contact() {
   const { register, handleSubmit, reset } = useForm();
   const onSubmit = (data) => {
-    // You can wire this to your backend or a service like Formspree
     alert(`Thanks ${data.name}! We’ll reach out soon.`);
     reset();
+  };
+
+  const socialIcons = {
+    LinkedIn: <FaLinkedin size={20} />,
+    GitHub: <FaGithub size={20} />,
+    Instagram: <FaInstagram size={20} />,
   };
 
   return (
@@ -22,11 +28,19 @@ export default function Contact() {
         </form>
 
         <div className="p-6 rounded-2xl bg-white shadow-soft space-y-4">
-          <div><span className="font-semibold">Email:</span> <a className="text-brandBlue" href={`mailto:${contact.email}`}>{contact.email}</a></div>
-          <div><span className="font-semibold">Phone:</span> <a className="text-brandBlue" href={`tel:${contact.phone}`}>{contact.phone}</a></div>
+          <div className="flex items-center gap-2">
+            <FaEnvelope className="text-brandBlue" />
+            <a className="text-brandBlue" href={`mailto:${contact.email}`}>{contact.email}</a>
+          </div>
+          <div className="flex items-center gap-2">
+            <FaPhone className="text-brandBlue" />
+            <a className="text-brandBlue" href={`tel:${contact.phone}`}>{contact.phone}</a>
+          </div>
           <div className="flex gap-4 pt-2">
             {contact.socials.map(s => (
-              <a key={s.label} href={s.href} target="_blank" rel="noreferrer" className="text-sm underline hover:text-brandPurple">{s.label}</a>
+              <a key={s.label} href={s.href} target="_blank" rel="noreferrer" className="text-brandBlue hover:text-brandPurple">
+                {socialIcons[s.label]}
+              </a>
             ))}
           </div>
         </div>

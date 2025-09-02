@@ -34,10 +34,28 @@ export const services = [
 ];
 
 export const projects = [
-  { name: "ShopKart – E-commerce Platform", live: "#", image: "https://via.placeholder.com/640x400?text=ShopKart" },
-  { name: "WeatherNow – Real-time Weather App", live: "#", image: "https://via.placeholder.com/640x400?text=WeatherNow" },
-  { name: "EduCollab – Student Collaboration Tool", live: "#", image: "https://via.placeholder.com/640x400?text=EduCollab" },
+  {
+    name: "ShopKart – E-commerce Platform",
+    live: "https://coreverse.in/",
+    image: "https://i.postimg.cc/SN3yj3HM/Screenshot-2025-09-02-152537.png"
+  },
+  {
+    name: "WeatherNow – Real-time Weather App",
+    live: "https://coreverse.in/",
+    image: "https://i.postimg.cc/SN3yj3HM/Screenshot-2025-09-02-152537.png"
+  },
+  {
+    name: "EduCollab – Student Collaboration Tool",
+    live: "https://coreverse.in/",
+    image: "https://i.postimg.cc/SN3yj3HM/Screenshot-2025-09-02-152537.png"
+  },
+  {
+    name: "Coreverse – All-in-One SaaS Platform",
+    live: "https://coreverse.in/",
+    image: "https://i.postimg.cc/SN3yj3HM/Screenshot-2025-09-02-152537.png"
+  },
 ];
+
 
 export const whyChooseUs = [
   "Innovative Solutions",
@@ -53,11 +71,32 @@ export const testimonials = [
 ];
 
 export const team = [
-  { name: "Gurumurugan ", role: "Full-Stack Developer", avatar: "https://i.pravatar.cc/200?img=12" },
-   { name: "Moulitaharan ", role: "Back-end developer", avatar: "https://i.pravatar.cc/200?img=12" },
-   { name: "Thilak Ganesh ", role: "UI/UX", avatar: "https://i.pravatar.cc/200?img=12" },
-
+  {
+    name: "Gurumurugan",
+    role: "Full-Stack Developer",
+    avatar: "https://i.pravatar.cc/200?img=12",
+    linkedin: "https://www.linkedin.com/in/gurumurugan",
+    github: "https://github.com/gurumurugan",
+    email: "gurumurugan@example.com"
+  },
+  {
+    name: "Moulitaharan",
+    role: "Back-end Developer",
+    avatar: "https://i.pravatar.cc/200?img=13",
+    linkedin: "https://www.linkedin.com/in/moulitaharan",
+    github: "https://github.com/moulitaharan",
+    email: "moulitaharan@example.com"
+  },
+  {
+    name: "Thilak Ganesh",
+    role: "UI/UX",
+    avatar: "https://i.pravatar.cc/200?img=14",
+    linkedin: "https://www.linkedin.com/in/thilakganesh",
+    github: "https://github.com/thilakganesh",
+    email: "thilak@example.com"
+  },
 ];
+
 
 export const contact = {
   email: "yourstartup@email.com",
