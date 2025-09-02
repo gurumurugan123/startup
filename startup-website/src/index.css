@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global resets & helpers */
+html { scroll-behavior: smooth; }
+.section { @apply max-w-6xl mx-auto px-4 md:px-6 lg:px-8; }
+
+/* Animated gradient for hero background */
+.bg-gradient-animated {
+  background: linear-gradient(-45deg, #2563EB, #9333EA, #2563EB);
+  background-size: 400% 400%;
+  animation: gradientShift 12s ease infinite;
+}
