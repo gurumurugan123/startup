@@ -54,8 +54,8 @@ export const testimonials = [
 
 export const team = [
   { name: "Gurumurugan ", role: "Full-Stack Developer", avatar: "https://i.pravatar.cc/200?img=12" },
-  { name: "Moulitharan", role: "Backend Engineer", avatar: "https://i.pravatar.cc/200?img=36" },
-   { name: "Thilak Ganesh ", role: "Full-Stack Developer", avatar: "https://i.pravatar.cc/200?img=12" },
+   { name: "Moulitaharan ", role: "Back-end developer", avatar: "https://i.pravatar.cc/200?img=12" },
+   { name: "Thilak Ganesh ", role: "UI/UX", avatar: "https://i.pravatar.cc/200?img=12" },
 
 ];
 
