@@ -3,10 +3,12 @@ module.exports = {
   content: ["./index.html", "./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
-      colors: {
-        brandBlue: "#2563EB",
-        brandPurple: "#9333EA",
-      },
+     colors: {
+  brandBlue: "#2563EB",
+  brandPurple: "#9333EA",
+  brandRed: "#DC2626", // Red
+},
+
       keyframes: {
         gradientShift: {
           "0%": { "background-position": "0% 50%" },
