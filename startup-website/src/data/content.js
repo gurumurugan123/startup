@@ -1,8 +1,10 @@
 export const nav = [
   { label: "Home", href: "#home" },
   { label: "About", href: "#about" },
+  { label: "Vision", href: "#vision" },
   { label: "Services", href: "#services" },
   { label: "Work", href: "#work" },
+  { label: "Blog", href: "#blog" },
   { label: "Contact", href: "#contact" },
 ];
 
@@ -19,20 +21,6 @@ export const about = {
   title: "Who We Are",
   paragraph:
     "We are a team of passionate developers, designers, and innovators committed to solving real-world problems with technology. Our mission is to build scalable, secure, and user-friendly solutions that empower individuals and businesses to grow in the digital era. We believe in collaboration, creativity, and the continuous pursuit of excellence in everything we do.",
-  cards: [
-    {
-      title: "Mission",
-      text: "Our mission is to deliver high-impact, user-centric products that not only meet business needs but also create meaningful experiences for end-users. We focus on building solutions that are reliable, scalable, and accessible, while ensuring that innovation remains at the core of everything we create."
-    },
-    {
-      title: "Vision",
-      text: "We envision a world where technology acts as an enabler for growth, opportunity, and positive change. By staying ahead of trends and embracing emerging technologies, we strive to build future-ready platforms that help individuals, startups, and enterprises achieve their goals seamlessly."
-    },
-    {
-      title: "Values",
-      text: "Our values define who we are and guide how we work. Integrity ensures that we remain honest and transparent in all our dealings. Quality drives us to deliver solutions that are reliable and robust. Continuous learning keeps us evolving, adapting, and staying ahead in a fast-paced digital landscape."
-    },
-  ],
 };
 
 export const services = [

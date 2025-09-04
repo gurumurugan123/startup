@@ -4,7 +4,7 @@ import { FaQuoteLeft, FaStar } from "react-icons/fa";
 export default function Testimonials() {
   return (
     <div className="section text-center">
-      <h2 className="text-3xl md:text-4xl font-bold mb-10 text-gray-800">
+      <h2 className="text-3xl md:text-4xl font-bold mb-10 text-gray-800 dark:text-white" data-aos="fade-up">
         What Our <span className="text-brandPurple">Clients Say</span>
       </h2>
 
@@ -12,8 +12,8 @@ export default function Testimonials() {
         {testimonials.map((t, index) => (
           <div
             key={t.name}
-            className="relative p-8 rounded-2xl bg-white shadow-lg hover:shadow-xl transition transform hover:-translate-y-2 opacity-0 animate-fadeIn"
-            style={{ animationDelay: `${index * 0.2}s` }}
+            className="relative p-8 rounded-2xl bg-white shadow-lg hover:shadow-xl transition transform hover:-translate-y-2 dark:bg-gray-800 dark:shadow-none"
+            data-aos="fade-up" data-aos-delay={index * 100}
           >
             {/* Quote icon */}
             <FaQuoteLeft className="absolute top-4 left-4 text-brandPurple/30 text-2xl" />
@@ -28,7 +28,7 @@ export default function Testimonials() {
             )}
 
             {/* Testimonial Text */}
-            <p className="italic text-gray-700 leading-relaxed">“{t.quote}”</p>
+            <p className="italic text-gray-700 leading-relaxed dark:text-gray-300">“{t.quote}”</p>
 
             {/* Star Ratings */}
             <div className="flex justify-center mt-4 text-yellow-500">
@@ -38,7 +38,7 @@ export default function Testimonials() {
             </div>
 
             {/* Client Name */}
-            <div className="mt-4 font-semibold text-gray-900">— {t.name}</div>
+            <div className="mt-4 font-semibold text-gray-900 dark:text-white">— {t.name}</div>
           </div>
         ))}
       </div>

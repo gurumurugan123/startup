@@ -5,9 +5,9 @@ export default function Hero() {
     <div className="relative bg-gradient-animated text-white">
       <div className="absolute inset-0 bg-black/30"></div>
       <div className="section relative z-10 min-h-[70vh] flex flex-col items-center justify-center text-center gap-6">
-        <h1 className="text-3xl md:text-5xl font-bold">{hero.headline}</h1>
-        <p className="text-base md:text-lg opacity-90 max-w-2xl">{hero.subtext}</p>
-        <div className="flex gap-3">
+        <h1 className="text-3xl md:text-5xl font-bold" data-aos="fade-up">{hero.headline}</h1>
+        <p className="text-base md:text-lg opacity-90 max-w-2xl" data-aos="fade-up" data-aos-delay="200">{hero.subtext}</p>
+        <div className="flex gap-3" data-aos="fade-up" data-aos-delay="400">
           {hero.ctas.map(cta => (
             <a key={cta.label} href={cta.href}
                className={`px-5 py-3 rounded-xl text-sm font-medium transition

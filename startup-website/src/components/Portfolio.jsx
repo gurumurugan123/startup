@@ -1,31 +1,27 @@
 import { projects } from "../data/content";
 import { ExternalLink, Github } from "lucide-react";
-import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
 
 export default function Portfolio() {
   return (
     <div className="section">
-      <h2 className="text-2xl md:text-3xl font-semibold mb-8 text-center">
+      <h2 className="text-2xl md:text-3xl font-semibold mb-8 text-center dark:text-white" data-aos="fade-up">
         Our Work
       </h2>
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {projects.map((p, i) => (
-          <motion.div
+          <div
             key={p.name}
-            className="group relative rounded-2xl overflow-hidden bg-white shadow-soft hover:shadow-lg transition-shadow"
-            initial={{ opacity: 0, y: 80 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.3 }}
-            transition={{ duration: 0.6, delay: i * 0.2, ease: "easeOut" }}
+            className="group relative rounded-2xl overflow-hidden bg-white shadow-soft hover:shadow-lg transition-shadow dark:bg-gray-800 dark:shadow-none"
+            data-aos="fade-up" data-aos-delay={i * 100}
           >
             <HoverSlideshow images={p.images} alt={p.name} />
 
             {/* Info */}
             <div className="p-5 flex items-center justify-between">
               <div>
-                <h3 className="font-semibold text-base">{p.name}</h3>
-                <span className="text-xs text-gray-500">{p.tag}</span>
+                <h3 className="font-semibold text-base dark:text-white">{p.name}</h3>
+                <span className="text-xs text-gray-500 dark:text-gray-400">{p.tag}</span>
               </div>
               <div className="flex space-x-3">
                 <a
@@ -41,14 +37,14 @@ export default function Portfolio() {
                     href={p.github}
                     target="_blank"
                     rel="noreferrer"
-                    className="text-gray-600 hover:text-black transition-colors"
+                    className="text-gray-600 hover:text-black transition-colors dark:text-gray-400 dark:hover:text-white"
                   >
                     <Github size={18} />
                   </a>
                 )}
               </div>
             </div>
-          </motion.div>
+          </div>
         ))}
       </div>
     </div>

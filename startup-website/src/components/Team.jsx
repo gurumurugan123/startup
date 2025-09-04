@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 export default function Team() {
   return (
     <div className="section">
-      <h2 className="text-2xl md:text-3xl font-semibold mb-8 text-center">
+      <h2 className="text-2xl md:text-3xl font-semibold mb-8 text-center dark:text-white">
         Meet Our Team
       </h2>
 
@@ -13,7 +13,7 @@ export default function Team() {
         {team.map((m, i) => (
           <motion.div
             key={m.name}
-            className="p-6 rounded-2xl bg-white shadow-soft text-center"
+            className="p-6 rounded-2xl bg-white shadow-soft text-center dark:bg-gray-800 dark:shadow-none"
             initial={{ opacity: 0, y: 50, scale: 0.9 }}
             whileInView={{ opacity: 1, y: 0, scale: 1 }}
             viewport={{ once: true }}
@@ -28,11 +28,11 @@ export default function Team() {
               transition={{ duration: 0.8, ease: "easeInOut" }}
             />
 
-            <div className="font-semibold text-lg">{m.name}</div>
-            <div className="text-gray-600 text-sm mb-3">{m.role}</div>
+            <div className="font-semibold text-lg dark:text-white">{m.name}</div>
+            <div className="text-gray-600 text-sm mb-3 dark:text-gray-400">{m.role}</div>
 
             <motion.div
-              className="flex justify-center gap-4 text-gray-600"
+              className="flex justify-center gap-4 text-gray-600 dark:text-gray-400"
               initial={{ opacity: 0, y: 10 }}
               whileHover={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.4 }}
@@ -41,7 +41,7 @@ export default function Team() {
                 <FaLinkedin size={20} className="hover:text-brandBlue" />
               </a>
               <a href={m.github} target="_blank" rel="noopener noreferrer">
-                <FaGithub size={20} className="hover:text-black" />
+                <FaGithub size={20} className="hover:text-white" />
               </a>
               <a href={`mailto:${m.email}`}>
                 <FaEnvelope size={20} className="hover:text-red-500" />
