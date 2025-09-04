@@ -7,7 +7,7 @@ export default function Footer() {
             <a key={l} href={`#${l.toLowerCase()}`} className="hover:text-brandPurple">{l}</a>
           ))}
         </nav>
-        <div className="text-gray-600">Copyright © Startup 2025. All rights reserved.</div>
+        <div className="text-gray-600">Copyright © Standup 2025. All rights reserved.</div>
       </div>
     </footer>
   );
