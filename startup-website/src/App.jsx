@@ -14,19 +14,19 @@ import Blog from "./components/Blog.jsx";
 
 export default function App() {
   return (
-    <div className="bg-white text-gray-900 dark:bg-gray-900 dark:text-gray-100">
+    <div className="antialiased">
       <Navbar />
       <main>
         <section id="home"><Hero /></section>
         <section id="about" className="py-20"><About /></section>
-        <section id="vision" className="py-20 bg-gray-50 dark:bg-gray-800"><VisionMission /></section>
-        <section id="services" className="py-20 bg-gray-50 dark:bg-gray-800"><Services /></section>
+        <section id="vision" className="py-20 bg-muted"><VisionMission /></section>
+        <section id="services" className="py-20 bg-muted"><Services /></section>
         <section id="work" className="py-20"><Portfolio /></section>
-        <section id="blog" className="py-20 bg-gray-50 dark:bg-gray-800"><Blog /></section>
+        <section id="blog" className="py-20 bg-muted"><Blog /></section>
         <section className="py-20"><WhyChooseUs /></section>
-        <section className="py-20 bg-gray-50 dark:bg-gray-800"><Testimonials /></section>
+        <section className="py-20 bg-muted"><Testimonials /></section>
         <section className="py-20"><Team /></section>
-        <section id="contact" className="py-20 bg-gray-50 dark:bg-gray-800"><Contact /></section>
+        <section id="contact" className="py-20 bg-muted"><Contact /></section>
       </main>
       <Footer />
       <ScrollToTop />
